@@ -1,8 +1,13 @@
 <!doctype html>
 <title>Flaskr</title>
+
 <link rel=stylesheet type=text/css href="{{ url_for('static', filename='style.css') }}">
+<!--<link rel="stylesheet" type="text/css" href="style.css">-->
+
 <div class=page>
+	<header id="masthead">
 	<h1>Flaskr</h1>
+	</header>
 	<div class=metanav>
 	{% if not session.logged_in %}
 		<a href="{{ url_for('login') }}">log in</a>
